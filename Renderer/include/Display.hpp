@@ -1,5 +1,4 @@
 #pragma once
-#include <string>
 
 namespace Renderer {
     // display класс для манипуляции окном а также вгрузкой в него сцен
@@ -10,7 +9,7 @@ namespace Renderer {
         Display();
         ~Display() = default;
 
-        void setWindowTitle(std::string& title);
+        void setWindowTitle(const char* title);
         void setWindowDim(const int width, const int height);
         void mainLoop();
     };

@@ -11,8 +11,8 @@ namespace Renderer {
         SetWindowSize(width, height);
     }
 
-    void Display::setWindowTitle(std::string &title) {
-        SetWindowTitle(title.c_str());
+    void Display::setWindowTitle(const char* title) {
+        SetWindowTitle(title);
     }
 
     // основной цикл дисплея
